@@ -1,0 +1,89 @@
+body {
+  font-family: var(--font-family-base), sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  background-color: var(--color-surface);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-base);
+  cursor: pointer;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--flame);
+}
+
+p {
+  margin-block: 0;
+}
+
+p:not([class]):not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  /* text-transform: uppercase; */
+  color: var(--black);
+  margin: 0px;
+}
+
+button {
+  text-align: center;
+  text-wrap: nowrap;
+  font-size: var(--font-size-base);
+}
+
+svg {
+  transition: all var(--transition-base);
+}
+
+svg:hover {
+  filter: drop-shadow(0 4px 12px rgba(64, 112, 244, 0.5));
+  transform: translateY(-2px);
+}
+
+svg path,
+svg circle,
+svg rect {
+  transition: fill var(--transition-base);
+}

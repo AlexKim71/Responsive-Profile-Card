@@ -1,0 +1,15 @@
+.profile-card__button {
+  border: none;
+  font-size: 19px;
+  margin: 0 10px;
+  padding: 12px 35px;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-btn);
+  color: var(--color-background);
+  font-weight: var(--font-weight-semibold);
+}
+
+.profile-card__button:hover {
+  background-color: var(--color-primary-hover);
+  transition-duration: var(--transition-base);
+}
